@@ -1,19 +1,22 @@
-package corejava;
-
 /**
- * # # # # # 
- * # _ _ _ #
- * # _ _ _ #
- * # _ _ _ #
- * # # # # # 
+ * 
  */
+package corejava;
 import java.util.Scanner;
+/**
+ * # 
+ * # # 
+ * # - #  
+ * # - - # 
+ * # - - - #
+ * # # # # # #
+ */
 /*
  * @author HP
  * @category 
  * @description this is an example for conditional pattern
  */
-public class Newpattern01 {
+public class Newpattern02 {
 
 	/**
 	 * @param args
@@ -23,9 +26,9 @@ public class Newpattern01 {
 		Scanner sc=new Scanner(System.in);
 		System.out.print("Enter number ");
 		int n=sc.nextInt();
-		for(int i=0; i<n; i++) {
-			for(int j=0; j<n; j++) {
-				if(i==0 || i==(n-1)|| j==0 || j==n-1) {
+		for(int i=0; i<=n; i++) {
+			for(int j=0; j<=i; j++) {
+				if(i==0 || i==(n)|| j==i || j==0) {
 					System.out.print("# ");
 				}
 				else {
