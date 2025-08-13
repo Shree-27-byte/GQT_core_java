@@ -1,0 +1,30 @@
+package corejava.String;
+
+import java.util.Scanner;
+
+public class String_VoWels {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter the string : ");
+		String s=sc.nextLine();
+		int vowel_C=0;
+		int vowel_S=0;
+		for(int i=0; i<s.length(); i++) {
+				if(s.charAt(i)=='A' || s.charAt(i)=='E' ||
+						s.charAt(i)=='I' || s.charAt(i)=='O' ||  s.charAt(i)=='U') {
+					vowel_C++;
+				}
+				
+				else if(s.charAt(i)=='a' || s.charAt(i)=='e' ||
+							s.charAt(i)=='i' || s.charAt(i)=='o' ||  s.charAt(i)=='u'){
+					vowel_S++;
+				}
+			
+		}
+			System.out.println("Upper case vowels are = "+vowel_C);
+			System.out.println("Smaller Case vowels are = "+vowel_S);
+
+	}
+
+}

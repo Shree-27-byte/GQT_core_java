@@ -1,18 +1,21 @@
 package corejava.Array;
-// 2D array Structured
+//2D array Structured Jagged
 import java.util.Scanner;
 
-class ArrayOp{
+class Arrayprg{
 	String arr[][];
 	Scanner sc=new Scanner(System.in);
 	
 	void createArray() {
 		System.out.print("Enter class count : ");
 		int cls = sc.nextInt();
-		System.out.print("Enter student in each class : ");
-		int stu = sc.nextInt();
 		
-		arr=new String[cls][stu];
+		arr=new String[cls][];
+		
+		for(int i=0; i<arr.length; i++) {
+			System.out.print("Enter the no of Student in each class "+(i+1)+" ");
+			arr[i] = new String[sc.nextInt()];
+		}
 		System.out.println("Array created ");
 		System.out.println("------------------");
 		}
@@ -36,10 +39,10 @@ class ArrayOp{
 	}
 }
 		
-public class Array03 {
+public class Array04 {
 
 	public static void main(String[] args) {
-		ArrayOp a= new ArrayOp();
+		Arrayprg a= new Arrayprg();
 		a.createArray();
 		a.collectData();
 		a.displayData();
